@@ -2,7 +2,7 @@ doctype html
 html
 	head
 		title 1004Catering
-		link(rel='stylesheet', href='/stylesheets/style.css')
+		link(rel='stylesheet', href='/stylesheets/layout.css')
 		meta(name='viewport' content='width=device-width, initial-scale=1.0')
 	body
 		header
@@ -11,7 +11,8 @@ html
 				span  / 
 				span(class='kr unselected') 한국어
 			div(id='call')
-				span Call Us Today! 562-407-1004 | lunch@1004catering.com
+				span(class='english') Call Us Today | (562)407-1004 | info@1004catering.com
+				span(class='korean') 오늘 전화주세요 | (562)407-1004 | info@1004catering.com
 			div(id='logo')
 				img(src='/images/LOGO.png' )
 			nav
@@ -35,43 +36,69 @@ html
 
 		footer
 			div
-				div(id='contact')
-					h3 contact
-					p 562-407-1004
-					p 714-234-0864
-					p 213-365-0006
-					p Info@1004catering.com
-					p 1004Catering
-					p 14528 Carmenita Rd.
-					p Norwalk, CA 90650
-					a(href='https://www.facebook.com/pages/Angel-Catering/348531631977637')
-						img(src='/images/facebook.ico' class='social-icon')
-					a(href='https://www.yelp.com/biz/angel-catering-norwalk')
-						img(src='/images/yelp.ico' class='social-icon')
+				div(class='footer-links')
+					div(class='contact-line')
+						h3(class='english') contact
+						h3(class='korean') 접촉
+					div(class='contact-line')
+						a(href='https://www.yelp.com/biz/angel-catering-norwalk')
+							img(src='/images/yelp.ico' class='social-icon')
+						a(href='https://goo.gl/maps/ehtwFa5rVwt')
+							img(src='images/googlemaps.ico' class='social-icon')
+						a(href='https://www.facebook.com/pages/Angel-Catering/348531631977637')
+							img(src='/images/facebook.ico' class='social-icon')
+					div(class='contact-line')
+						a(href='email:Info@1004catering.com')
+							img(src='/images/email.ico' class='social-icon')
+						span Info@1004catering.com
+					div(class='contact-line')
+						img(src='/images/groom.png' class='phone-icon')
+						span (562)407-1004
+					div(class='contact-line')
+						img(src='/images/bride.png' class='phone-icon')
+						span (714)234-0864
+					div(class='contact-line')
+						img(src='/images/planner.png' class='phone-icon')
+						span (213)365-0006
 
-				div
-					hr(width='1' size='300')
-				div
-					h3 information
-					p about us
-					p contact us
-				div
-					h3 weddings
-					p wedding menu
-					p wedding event gallery
-				div
-					h3 birthday
-					p birthday menu
-					p birthday event
-					p gallery
-				div
-					h3 events & party
-					p event & party menu
-					p event & party gallery
-				div
-					h3 lunch
-					p lunch menu
-					p lunch gallery
+
+				div(id='vertical-rule' class='footer-links')
+					hr(width='1' size='340')
+				div(class='footer-links')
+					h3(class='english') information
+					p(class='english') about us
+					p(class='english') contact us
+					h3(class='korean') 정보
+					p(class='korean') 우리에 대해
+					p(class='korean') 문의하기
+				div(class='footer-links')
+					h3(class='english') weddings
+					p(class='english') wedding menu
+					p(class='english') wedding event gallery
+					h3(class='korean') 결혼식
+					p(class='korean') 웨딩 메뉴
+					p(class='korean') 결혼식 이벤트 갤러리				
+				div(class='footer-links')
+					h3(class='english') birthday
+					p(class='english') birthday menu
+					p(class='english') birthday event gallery
+					h3(class='korean') 돌/생신 잔치
+					p(class='korean') 생일 메뉴
+					p(class='korean') 생일 이벤트 갤러리
+				div(class='footer-links')
+					h3(class='english') events & party
+					p(class='english') event & party menu
+					p(class='english') event & party gallery
+					h3(class='korean') 파티 및 행사
+					p(class='korean') 이벤트 & 파티 메뉴
+					p(class='korean') 이벤트 & 파티 갤러리
+				div(class='footer-links')
+					h3(class='english') lunch
+					p(class='english') lunch menu
+					p(class='english') lunch gallery
+					h3(class='korean') 런치
+					p(class='korean') 점심 메뉴
+					p(class='korean') 점심 식사 갤러리
 		script(src='https://code.jquery.com/jquery-3.3.1.min.js')
 		script(src='/javascripts/index.js' type='text/javascript')
 

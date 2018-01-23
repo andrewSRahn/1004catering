@@ -1,5 +1,26 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+	link(rel='stylesheet', href='/stylesheets/index.css')
+	div(id='dot-container')
+		span(class='dot' onclick='currentSlide(1)')
+		span(class='dot' onclick='currentSlide(2)')
+		span(class='dot' onclick='currentSlide(3)')
+		span(class='dot' onclick='currentSlide(4)')
+		span(id='image-title')
+	div(class='slideshow-container')
+		div(class='mySlides fade')
+			img(src='/images/homepagebanner1.jpg' style='width:100%')
+			
+		div(class='mySlides fade')
+			img(src='/images/homepagebanner2.jpg' style='width:100%')
+
+		div(class='mySlides fade')
+			img(src='/images/homepagebanner3.jpg' style='width:100%')
+
+		div(class='mySlides fade')
+			img(src='/images/angel-catering.jpg' style='width:100%')
+
+		a(class='prev' onclick='plusSlides(-1)') &#10094;
+		a(class='next' onclick='plusSlides(1)') &#10095;
+

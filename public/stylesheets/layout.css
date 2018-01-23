@@ -1,5 +1,5 @@
 body {
-  font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 16px Papyrus, Helvetica, Arial, sans-serif;
   margin: 0;
 }
 
@@ -40,7 +40,7 @@ a {
 
 nav{
 	padding-left:10px;
-	height: 75px;
+	height: 80px;
 	background-color: #8AA96D;
 }
 
@@ -58,14 +58,22 @@ nav p:hover{
 }
 
 footer{
-	height: 400px;
+	height: 380px;
 	background-color:#251505;
 	color: white;
 }
 
-footer div div{
+
+
+.footer-links{
 	float:left;
-	padding: 10px;
+	padding: 5px 20px;
+}
+
+.phone-icon{
+	filter:rgb(255,255,255);
+	width:50px;
+	width:50px;
 }
 
 .social-icon{
@@ -99,7 +107,7 @@ h3{
 		width:100%;
 	}
 	nav {
-		height:260px;
+		height:270px;
 	}
 	#call {
 		display:none;
@@ -107,9 +115,23 @@ h3{
 	#logo{
 		display:none;
 	}
+
 	footer{
+		height: 1200px;
+	}
+
+	.footer-links{
+		clear:left;
+	}
+
+	#vertical-rule{
+		clear:both;
+	}
+
+	#vertical-rule{
 		display:none;
 	}
+
 }
 /*GREENS
 C8EC9F
