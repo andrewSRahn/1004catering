@@ -9,13 +9,17 @@ a {
 
 #call {
 	height: 50px;
-	background-color: #9AC965;
+	background-color: #A0CE4E;
 }
 
 #call span{
 	display:block;
 	color: white;
-	padding: 15px 100px;
+	padding: 20px;
+}
+
+#language {
+	padding:5px 20px;
 }
 
 #logo{
@@ -32,31 +36,34 @@ a {
 	display:block;
 	max-width: 100%;
 	max-height: 100%;
-	margin-left: auto;
-	margin-right: auto;
 }
 
 nav{
+	padding-left:10px;
 	height: 75px;
-	background-color: #6B9A33;
-	text-align:center;
+	background-color: #8AA96D;
 }
 
-nav a{
-	padding: 10px 10px;
+nav p{
+	float:left;
+	padding-left:10px;
+	padding-right:10px;
 	color: white;
-	text-transform:uppercase;
 	font-size: 22px;
+}
 
+nav p:hover{
+	color:#A0CE4E;
+	box-shadow: 0px 5px #A0CE4E;
 }
 
 footer{
 	height: 400px;
-	background-color: #440E00;
+	background-color:#251505;
 	color: white;
 }
 
-footer div{
+footer div div{
 	float:left;
 	padding: 10px;
 }
@@ -64,6 +71,45 @@ footer div{
 .social-icon{
 	width: 50px;
 	height: 50px;
+}
+
+.selected{
+	font-weight:bold;
+	text-decoration:underline;
+}
+
+.unselected:hover{
+	font-weight:bold;
+	text-decoration:underline;
+}
+
+h3{
+	text-decoration:underline;
+	color:#A0CE4E;
+}
+
+.korean{
+	font-family: Batang;
+}
+/*Batang, Dotum, Gulim, Gungsuh, Malgun Gothic*/
+
+@media(max-width:800px){
+	nav p {
+		margin:10px 10px 0px 0px;
+		width:100%;
+	}
+	nav {
+		height:260px;
+	}
+	#call {
+		display:none;
+	}
+	#logo{
+		display:none;
+	}
+	footer{
+		display:none;
+	}
 }
 /*GREENS
 C8EC9F
